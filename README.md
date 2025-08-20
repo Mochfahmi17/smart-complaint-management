@@ -44,10 +44,11 @@ PUT -> /complaints/update -> Update complaint
 DELETE -> /complaints/delete/{id} -> hapus complaint
 
 ### categories
-GET -> /categories Ambil semua kategori
+GET -> /categories -> Ambil semua kategori
 
 ## Sample Data
-### Ambil semua data
+### Ambil semua data (Endpoint API: http://localhost:3001/api/complaints)
+```json
 {
     "success": true,
     "error": false,
@@ -88,8 +89,10 @@ GET -> /categories Ambil semua kategori
         }
     ]
 }
+```
 
-### Ambil data berdasarkan Id
+### Ambil data berdasarkan Id (Endpoint API: http://localhost:3001/api/complaints/{id})
+```json
 {
     "success": true,
     "error": false,
@@ -111,8 +114,10 @@ GET -> /categories Ambil semua kategori
         }
     }
 }
+```
 
-### Ambil status complaint
+### Ambil status complaint (Endpoint API: http://localhost:3001/api/complaints/stats)
+```json
 {
     "success": true,
     "error": false,
@@ -123,8 +128,10 @@ GET -> /categories Ambil semua kategori
         "totalDone": 0
     }
 }
+```
 
-### Ambil semua kategori
+### Ambil semua kategori (Endpoint API: http://localhost:3001/api/categories)
+```json
 {
     "success": true,
     "error": false,
@@ -155,3 +162,4 @@ GET -> /categories Ambil semua kategori
         }
     ]
 }
+```
